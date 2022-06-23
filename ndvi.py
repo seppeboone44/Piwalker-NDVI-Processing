@@ -44,7 +44,7 @@ x = 1
 
 for i in range (0, (tot)):
     
-    imageread = str('C:/Users/seppe/Desktop/Astro-Pi_data/piwalker/photo_%03d.jpg' % (x,) )
+    imageread = str('C:/Users/user/Desktop/Astro-Pi_data/piwalker/photo_%03d.jpg' % (x,) )
     image = cv2.imread(imageread) #defining the scource image
     original = np.array(image, dtype=float)/float(255)#convert the image to an array
     contrasted = contrast_stretch(original)
